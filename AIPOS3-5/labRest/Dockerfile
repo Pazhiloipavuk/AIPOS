@@ -3,7 +3,7 @@ VOLUME /tmp
 EXPOSE 8079
 RUN mkdir -p /app/
 RUN mkdir -p /app/logs/
-COPY target/rest-1.0.war /usr/loca/tomcat/webapps/app.war
+COPY target/rest-1.0.war /usr/local/tomcat/webapps/app.war
 ENV DATABASE_URL=jdbc:postgresql://postgres4:5432/testdb
 ENV DATABASE_USERNAME=postgres
 ENV DATABASE_PASSWORD=root
